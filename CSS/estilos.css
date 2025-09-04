@@ -1,0 +1,305 @@
+body {
+  background: #7a263a; /* Bordó oscuro */
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 36px;
+  margin-top: 32px;
+  letter-spacing: 0.5px;
+  color: #ffe14d; /* Amarillo */
+  text-shadow: 1px 1px 2px #3a3a3a33;
+}
+
+.main-content {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-panel, .right-panel, .panelDerecho, .tercerPanel {
+  background: #444444; /* Gris oscuro */
+  border: 1.5px solid #ffe14d; /* Amarillo */
+  border-radius: 8px;
+  padding: 32px 28px 28px 28px;
+  box-sizing: border-box;
+  width: 420px;
+  min-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.left-panel h2,
+.right-panel h3,
+.tercerPanel h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 18px 0 10px 0;
+  width: 100%;
+  text-align: left;
+  color: #ffe14d;
+}
+
+.left-panel select,
+.left-panel input[type="text"],
+.buscar-insumo,
+.form-group input,
+.buscar-cliente,
+.buscar-producto {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.2px solid #ffe14d;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fffbe6;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: #3a3a3a;
+}
+
+.cliente-card {
+  display: block;
+  border: 1.5px solid #ffe14d;
+  border-radius: 7px;
+  padding: 18px 18px 14px 18px;
+  background: #fffbe6;
+  margin: 0 auto 22px auto;
+  font-size: 1.08rem;
+  width: 90%;
+  box-sizing: border-box;
+  color: #3a3a3a;
+}
+
+.cliente-card strong {
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: #7a263a;
+}
+
+.registrar-cliente, .guardar-cliente, .eliminar-seleccionado, .registrar-btn, .pestana-servicios, .pestana-index {
+  width: 90%;
+  margin: 0 auto 18px auto;
+  padding: 13px 0;
+  background: #ffe14d;
+  color: #7a263a;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.18rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: block;
+  text-align: center;
+  box-shadow: 0 2px 8px #3a3a3a22;
+  letter-spacing: 0.5px;
+}
+
+.registrar-cliente:hover, .guardar-cliente:hover, .eliminar-seleccionado:hover, .registrar-btn:hover, .pestana-servicios:hover, .pestana-index:hover {
+  background: #7a263a;
+  color: #ffe14d;
+}
+
+.tercerPanel {
+  width: 420px;
+  min-width: 370px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.historial-servicios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.historial-servicios th, .historial-servicios td {
+  border: 1px solid #ffe14d;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 1rem;
+  background: #fffbe6;
+  color: #3a3a3a;
+}
+
+.historial-servicios th {
+  background: #ffe14d;
+  color: #7a263a;
+  font-weight: 600;
+}
+
+.insumos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.insumo-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffe14d;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #fffbe6;
+  gap: 10px;
+  font-size: 1.08rem;
+  color: #3a3a3a;
+}
+
+.insumo-trash {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 6px;
+  color: #7a263a;
+}
+
+.insumo-nombre {
+  flex: 1;
+  font-weight: 500;
+}
+
+.insumo-btn {
+  background: #ffe14d;
+  border: none;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 4px;
+  font-weight: 600;
+  color: #7a263a;
+  transition: background 0.2s, color 0.2s;
+}
+
+.insumo-btn:hover {
+  background: #7a263a;
+  color: #ffe14d;
+}
+
+.insumo-cantidad {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #7a263a;
+}
+
+/* Ajustes para las pestañas de navegación */
+.pestana-servicios, .pestana-index {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  width: auto;
+  min-width: 180px;
+  padding: 13px 28px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Cambia el color de los labels y textos generales a blanco */
+.left-panel label,
+.left-panel,
+.right-panel,
+.tercerPanel,
+
+
+td {
+  color: #fff !important;
+}
+
+.historial-servicios td,
+.historial-servicios th,
+.historial-servicios em {
+  color: #222 !important;
+}
+
+/* Estilo para la grilla de stock en serviciosYStock.html */
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background: #fffbe6;
+  font-size: 1.08rem;
+}
+
+.stock-table th, .stock-table td {
+  border: 1.5px solid #ffe14d;
+  padding: 10px 18px;
+  text-align: left;
+}
+
+.stock-table th {
+  background: #ffe14d;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.13rem;
+}
+
+.stock-table td {
+  background: #fffbe6;
+  color: #222;
+  font-weight: 400;
+}
+
+.stock-table tr:not(:first-child):hover td {
+  background: #fff3b0;
+}
+
+.stock-table th,
+.stock-table td {
+  color: #222 !important;
+}
+
+.pestana-servicios,
+.pestana-index {
+  text-decoration: none !important;
+}
+
+.vehiculos-table th, .vehiculos-table td {
+  border: none;
+  padding: 8px 8px;
+  text-align: center;
+  background: transparent;
+}
+
+.vehiculo-btn {
+  background: #ffe14d;
+  color: #7a263a;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 4px;
+  margin-right: 4px;
+  box-shadow: 0 1px 3px #0001;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehiculo-btn:hover {
+  background: #7a263a;
+  color: #ffe14d;
+}

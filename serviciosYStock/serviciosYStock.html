@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Servicios y Stock</title>
+  <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    <a href="../clientes/index.html" class="pestana-index">Gestion de Clientes</a>
+  <div class="container">
+    <h1>Gestión de Servicios</h1>
+    <div class="main-content">
+      <!-- Panel Izquierdo -->
+      <div class="left-panel">
+        <h2>Registrar Servicio</h2>
+        <select>
+          <option>Carlos Pérez</option>
+        </select>
+        <input type="text" placeholder="Toyota Hilux AA 161 XD">
+        <input type="text" placeholder="Cambio de aceite y liquido refrigerante.">
+        <input type="text" placeholder="Fecha de Servicio" class="fecha-servicio">
+        <input type="text" placeholder="Precio" class="precio-servicio">
+
+        <h2>Stock de Insumos</h2>
+        <input type="text" class="buscar-insumo" placeholder="Buscar insumo...">
+       
+        <div class="insumos-lista">
+          <div class="insumo-item">
+            <span class="insumo-trash">&#128465;</span>
+            <span class="insumo-nombre">Aceite Mobil</span>
+            <button class="insumo-btn">-</button>
+            <span class="insumo-cantidad">1</span>
+            <button class="insumo-btn">+</button>
+          </div>
+          <div class="insumo-item">
+            <span class="insumo-trash">&#128465;</span>
+            <span class="insumo-nombre">Anticongelante Motul</span>
+            <button class="insumo-btn">-</button>
+            <span class="insumo-cantidad">1</span>
+            <button class="insumo-btn">+</button>
+          </div>
+        </div>
+        <button class="registrar-btn">Registrar</button>
+      </div>
+      <!-- Panel Derecho -->
+      <div class="right-panel">
+        <h3>Consulta de Stock</h3>
+        <div class="form-group">
+          <label for="buscar-producto">Producto:</label>
+          
+          <input type="text" id="buscar-producto" class="buscar-producto">
+        </div>
+        <button class="registrar-btn">Buscar</button>
+        <table class="stock-table">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <td>Stock</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anticongelante Motul 1L</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Aceite Mobil 1L</td>
+              <td>15</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

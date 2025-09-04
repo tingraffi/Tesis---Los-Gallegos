@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+
+<body>
+    <a href="../serviciosYStock/serviciosYStock.html" class="pestana-servicios">Servicios y Stock</a>
+    <div class="container">
+        <h1>Gestión de Clientes</h1>
+        <div class="main-content">
+            <div class="left-panel">
+                <form>
+                    
+                    <h2>Registro de Cliente</h2>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">DNI:</label>
+                        <input type="text" id="DNI" name="DNI">
+                    </div>
+
+                   <div class="vehiculos-asociados">
+  <table class="vehiculos-table">
+    <thead>
+      <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Patente</th>
+        <th>Año</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" placeholder=""></td>
+        <td><input type="text" placeholder=""></td>
+        <td><input type="text" placeholder=""></td>
+        <td><input type="text" placeholder=""></td>
+        <td>
+          <button class="vehiculo-btn agregar">+</button>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder=""></td>
+        <td><input type="text" placeholder=""></td>
+        <td><input type="text" placeholder=""></td>
+        <td><input type="text" placeholder=""></td>
+        <td>
+          <button class="vehiculo-btn quitar">-</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+                    <!-- <button type="button" class="add-vehiculo">Añadir</button> -->
+                    <!-- <h2>Historial de Servicios</h2> -->
+                    <!-- <textarea rows="2"></textarea>
+          <textarea rows="2"></textarea> -->
+                    <button type="submit" class="guardar-cliente">Guardar Cliente</button>
+                </form>
+            </div>
+            <div class="right-panel">
+    <input type="text" class="buscar-cliente" placeholder="Buscar cliente:">
+    <div class="cliente-card">
+        <div>
+            <strong>Carlos Pérez</strong>
+                <br>DNI: 43451217
+                <br> Nro : 3512261070
+                <br> Patente : AA 282 NK
+                <br> Ult. Visita : 15/03/2024
+                <br> Servicio; Cambio de aceite.
+        </div>
+    </div>
+    <div class="cliente-card">
+        <div>
+            <strong>María Gómez</strong>
+                <br>DNI: 43678408
+                <br> Nro : 3512261070
+                <br> Patente : AA 282 NK
+                <br> Ult. Visita : 15/03/2024
+                <br> Servicio; Cambio de aceite.
+        </div>
+    </div>
+    <div class="cliente-card">
+        <div>
+            <strong>Juan López</strong>
+                <br>DNI: 46222965
+                <br> Nro : 3512261070
+                <br> Patente : AA 282 NK
+                <br> Ult. Visita : 15/03/2024
+                <br> Servicio; Cambio de aceite.
+        </div>
+    </div>
+    <button class="eliminar-seleccionado">Eliminar Seleccionado</button>
+</div>
+            <div class="tercerPanel">
+  <h2>Historial de Servicios</h2>
+  <table class="historial-servicios" id="historial-servicios">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Servicio</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3"><em>Seleccione un cliente para ver su historial.</em></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</body>
+
+</html>
